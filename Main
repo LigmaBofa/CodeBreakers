@@ -1,4 +1,25 @@
 
+/**
+ *  Authors: Simon, Derrick Daniel
+ *  Date: March 4, 2019
+ *  Description:
+ *      Code Breakers board game played on GUI in Java. Uses elements such as
+ *      arrays, array lists, 2d arrays. The game goes as follows:
+ *      The user is the guesser and the program is the code creator.
+ *      The computer creates a code consisting of GRBYOP, with length of 4, and
+ *      the user has 10 guesses to try to guess the code made by the computer.
+ * 
+ *      The program will inform the user on the accuracy of each guess:
+ *      White peg is correct colour and incorrect position 
+ *      Black peg is correct colour in the correct position
+ * 
+ *      Given 10 tries, the player either wins or loses.
+ * 
+ *      A GUI was implemented in order to increase user satisfcation in playing
+ *      this game.
+ *      Enjoy!!!
+ */
+
 import java.util.*;
 
 public class main {
