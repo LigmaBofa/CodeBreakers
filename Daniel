@@ -1,0 +1,43 @@
+package Code_Breakers;
+
+import java.util.*;
+
+public class CodeBreakers {
+	private static boolean valid(String[] code, String order, int length) {
+		boolean validated;
+		String stringCode = "";
+		
+		for (int i = 0; i < length; i++) {
+			stringCode += code[i];
+		}
+		if (stringCode.equalsIgnoreCase(order)) {
+			validated = true;
+		}
+		else {
+			validated = false;
+		}
+		return validated;
+	}
+	
+	private static char[] creatCode(String colours, int length) {
+		char[] code = new char[length];
+		for (int i = 0; i < length; i++) {
+			code[i] = colours.charAt((int) (Math.random() * 6));
+		}
+		return code;
+	}
+	
+	private static ArrayList<Character> removeFullyCorrect(char[] code, char[] guesses) {
+		ArrayList<Character> removeFullyCorrect = new ArrayList<Character>();
+		for (int i = 0; i < code.length; i++) {
+			if (guesses[i] != code[i]) {
+				removeFullyCorrect.add(guesses[i]);
+			}
+		}
+		return removeFullyCorrect;
+	}
+	
+	public static void main(String[] args) {
+		
+	}
+}
